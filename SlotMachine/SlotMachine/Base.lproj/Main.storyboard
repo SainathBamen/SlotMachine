@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SlotMachine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="charmendor" translatesAutoresizingMaskIntoConstraints="NO" id="cTT-nh-JQ9">
+                                <rect key="frame" x="253" y="167" width="105" height="118"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="Jhv-tq-Bik"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bulbasaur" translatesAutoresizingMaskIntoConstraints="NO" id="OsP-dV-NUf">
+                                <rect key="frame" x="272" y="584" width="102" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="102" id="y3a-GW-jPn"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pikachu" translatesAutoresizingMaskIntoConstraints="NO" id="Qgt-FP-Xct">
+                                <rect key="frame" x="16" y="182" width="120" height="89"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="89" id="c0A-Pu-0BW"/>
+                                    <constraint firstAttribute="width" constant="120" id="gxD-yc-nyr"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Points:1000" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgo-jd-jsR">
+                                <rect key="frame" x="108" y="68" width="175" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="qWA-BL-dRX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OtD-ft-uEV">
+                                <rect key="frame" x="112" y="692" width="171" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="YKe-PX-OTA"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Spin">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="34"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="spinButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xtj-Gy-15t"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="chicorita" translatesAutoresizingMaskIntoConstraints="NO" id="izz-lZ-ZWg">
+                                <rect key="frame" x="32" y="591" width="123" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="123" id="SdV-lw-Y9q"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="ioq-SF-Lqh">
+                                <rect key="frame" x="0.0" y="352" width="390" height="176"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="176" id="INq-S4-bIQ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ioq-SF-Lqh" firstAttribute="top" secondItem="cTT-nh-JQ9" secondAttribute="bottom" constant="66" id="70n-dj-nFn"/>
+                            <constraint firstItem="OsP-dV-NUf" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="9H4-JK-eZ7"/>
+                            <constraint firstItem="OtD-ft-uEV" firstAttribute="top" secondItem="izz-lZ-ZWg" secondAttribute="bottom" constant="8" symbolic="YES" id="AyT-6x-IGD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cTT-nh-JQ9" secondAttribute="trailing" constant="32" id="HOT-wN-tN3"/>
+                            <constraint firstItem="lgo-jd-jsR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="KZN-m2-3Hf"/>
+                            <constraint firstItem="izz-lZ-ZWg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="Kof-EL-xQT"/>
+                            <constraint firstItem="Qgt-FP-Xct" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="NBk-s7-3a2"/>
+                            <constraint firstItem="cTT-nh-JQ9" firstAttribute="top" secondItem="lgo-jd-jsR" secondAttribute="bottom" constant="41" id="Pg0-ai-vY6"/>
+                            <constraint firstItem="Qgt-FP-Xct" firstAttribute="centerY" secondItem="cTT-nh-JQ9" secondAttribute="centerY" id="SlF-rZ-d8E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OtD-ft-uEV" secondAttribute="bottom" constant="41" id="Utm-k9-4hH"/>
+                            <constraint firstItem="lgo-jd-jsR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="108" id="Xmz-z4-DU5"/>
+                            <constraint firstItem="Qgt-FP-Xct" firstAttribute="top" secondItem="lgo-jd-jsR" secondAttribute="bottom" constant="56" id="YGz-ZR-2T5"/>
+                            <constraint firstItem="ioq-SF-Lqh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bFb-LS-KuZ"/>
+                            <constraint firstItem="lgo-jd-jsR" firstAttribute="trailing" secondItem="OtD-ft-uEV" secondAttribute="trailing" id="cC1-eD-hKl"/>
+                            <constraint firstItem="OtD-ft-uEV" firstAttribute="top" secondItem="OsP-dV-NUf" secondAttribute="bottom" constant="8" symbolic="YES" id="hVb-7Z-yqN"/>
+                            <constraint firstItem="izz-lZ-ZWg" firstAttribute="top" secondItem="ioq-SF-Lqh" secondAttribute="bottom" constant="64" id="j0q-fR-NnY"/>
+                            <constraint firstItem="OtD-ft-uEV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="112" id="kse-oz-bkc"/>
+                            <constraint firstItem="ioq-SF-Lqh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="l8o-P7-wLh"/>
+                            <constraint firstItem="lgo-jd-jsR" firstAttribute="centerX" secondItem="ioq-SF-Lqh" secondAttribute="centerX" id="n65-7N-nvo"/>
+                            <constraint firstItem="OsP-dV-NUf" firstAttribute="top" secondItem="ioq-SF-Lqh" secondAttribute="bottom" constant="57" id="sRl-nb-Nj1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="image1" destination="cTT-nh-JQ9" id="RFn-jh-gNy"/>
+                        <outlet property="image2" destination="OsP-dV-NUf" id="rQb-YY-7Vh"/>
+                        <outlet property="image3" destination="Qgt-FP-Xct" id="6Wg-xz-dxk"/>
+                        <outlet property="image4" destination="izz-lZ-ZWg" id="M9z-02-4Li"/>
+                        <outlet property="pointsLabel" destination="lgo-jd-jsR" id="K0g-QE-z42"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4.615384615384615" y="12.085308056872037"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bulbasaur" width="234" height="216"/>
+        <image name="charmendor" width="225" height="225"/>
+        <image name="chicorita" width="475" height="475"/>
+        <image name="pikachu" width="736" height="667"/>
+        <image name="pokemon" width="1102" height="524"/>
+    </resources>
+</document>
